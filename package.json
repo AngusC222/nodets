@@ -1,0 +1,19 @@
+{
+  "name": "change_me",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "nodemon --watch src -e ts --exec 'npm run compile && node src/js/main.js'",
+    "compile": "tsc -p src && echo \"complied $(date +\"%H:%M:%S\")\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "@types/node": "^20.2.1",
+    "typescript": "^5.0.4"
+  }
+}
